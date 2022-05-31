@@ -122,12 +122,12 @@ curl https://[any_title].firebaseio.com/reviews.json
 var reviews = document.getElementById('reviews');
 var reviewsRef = db.ref('/reviews');
 
-reviewsRef.on('child_added', ({val, key}) => {
+reviewsRef.on('child_added', (data) => {
   var li = document.createElement('li')
-  li.id = key;
-  li.innerHTML = reviewTemplate(val())
+  li.id = data.key;
+  li.innerHTML = reviewTemplate(data.val())
   reviews.appendChild(li);
-})
+});
 
 function reviewTemplate({fullName, message}) {
   return `
