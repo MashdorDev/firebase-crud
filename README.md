@@ -1,3 +1,5 @@
+<a href="https://codeclimate.com/github/MashdorDev/firebase-crud/maintainability"><img src="https://api.codeclimate.com/v1/badges/5c38236a79bd364ffab5/maintainability" /></a>
+
 # Firebase-crud-example on github pages.
 
 Working example:   [Link](https://ckrcok.github.io/firebase-crud/ "Live Demo")
